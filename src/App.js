@@ -21,9 +21,9 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/profile">
+          <Route path="/profile">
             {isAuth ? <Profile /> : <Redirect to="/" />}
-          </Route>}
+          </Route>
           <Route exact path="/signin">
             <SignIn />
           </Route>
